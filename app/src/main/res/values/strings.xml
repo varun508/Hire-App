@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Hire Emp</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_candidate_list">CandidateListActivity</string>
 </resources>
