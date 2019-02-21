@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+
+        <TextView
+                android:text="What is the use of content provider in android?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/text_title_regular"
+                android:fontFamily="sans-serif-medium"
+                android:id="@+id/textView15"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+        <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textGray"
+                    android:padding="4dp"
+                    android:text="To send the data from an application to another application"
+                    android:layout_height="wrap_content"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textGray"
+                    android:padding="4dp"
+                    android:text="To share the data between applications"
+                    android:layout_height="wrap_content"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:textColor="@color/textGray"
+                    android:text="To store the data in a database"
+                    android:layout_height="wrap_content"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textGray"
+                    android:text="None of the above"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content"
+            />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
