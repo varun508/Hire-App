@@ -9,32 +9,34 @@ import androidx.recyclerview.widget.RecyclerView
 import com.yalantis.filter.adapter.FilterAdapter
 import com.yalantis.filter.widget.Filter
 import com.yalantis.filter.widget.FilterItem
-
-import kotlinx.android.synthetic.main.activity_candidate_list.*
+import kotlinx.android.synthetic.main.activity_companies.*
 import org.jetbrains.annotations.NotNull
 
-class CandidateListActivity : Activity() {
+class CompaniesActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_candidate_list)
+        setContentView(R.layout.activity_companies)
 
-        val list = listOf("Android", "Web", "Java", "Python", "PHP", "Agile", "SQL", "NoSQL", "Machine Learning")
+
+        val list = listOf(
+            "Android", "Web", "Java", "Python", "PHP", "Agile", "SQL", "NoSQL", "Machine Learning",
+            "Data Science"
+        )
 
         val mFilter = findViewById<Filter<Tag>>(R.id.filter)
-        mFilter.adapter = Adapter(list.map { Tag(it) }, this)
+        mFilter.adapter = CandidateListActivity.Adapter(list.map { Tag(it) }, this)
 
         //the text to show when there's no selected items
         mFilter.noSelectedItemText = ("All categories")
         mFilter.build()
 
-        rvCandidateList.adapter = CandidateListAdapter(this)
-        rvCandidateList.layoutManager = LinearLayoutManager(this).also {
+        rvCompanyList.adapter = CompanyListAdapter(this)
+        rvCompanyList.layoutManager = LinearLayoutManager(this).also {
             it.orientation = RecyclerView.VERTICAL
         }
-        rvCandidateList.setHasFixedSize(true)
+        rvCompanyList.setHasFixedSize(true)
     }
-
 
     class Adapter(@NotNull items: List<Tag>, private val context: Context) : FilterAdapter<Tag>(items) {
 
@@ -52,4 +54,5 @@ class CandidateListActivity : Activity() {
             return filterItem
         }
     }
+
 }

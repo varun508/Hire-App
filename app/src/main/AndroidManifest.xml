@@ -12,27 +12,27 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
         <activity
-                android:name=".CandidateListActivity"
-                android:label="@string/title_activity_candidate_list">
+                android:name=".CompaniesActivity"
+                android:label="@string/title_activity_companies">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+                android:name=".CandidateListActivity"
+                android:label="@string/title_activity_candidate_list">
+
         </activity>
         <activity
                 android:name=".LoginActivity"
                 android:label="@string/title_activity_login">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".SelectionActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
         </activity>

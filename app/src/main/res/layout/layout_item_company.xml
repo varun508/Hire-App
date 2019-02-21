@@ -26,7 +26,7 @@
                 android:id="@+id/circleImageView"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/image"
+                android:src="@drawable/google"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Anshul Kapoor"
+                android:text="Google, India"
                 android:textColor="@color/textBlack"
                 android:textSize="@dimen/text_body_regular"
                 app:layout_constraintStart_toEndOf="@+id/circleImageView"
@@ -46,7 +46,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Delhi, India"
+                android:text="Engineering and Technology"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9"/>
 
@@ -64,26 +64,30 @@
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="SHOW SCORE"
-                android:textAllCaps="false"
+                android:text="APPLY"
+                android:textAllCaps="true"
                 app:backgroundTint="@color/themeMain"
                 app:cornerRadius="30dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/chipGroup"
-                app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/materialButton5"
-                app:layout_constraintHorizontal_bias="1.0" android:id="@+id/materialButton6"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/materialButton3"
+                app:layout_constraintHorizontal_bias="1.0" android:id="@+id/materialButton4"/>
+
 
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="know more"
+                android:textAllCaps="true"
                 app:backgroundTint="@color/textLightGray"
                 app:cornerRadius="30dp"
-                app:layout_constraintBottom_toBottomOf="@+id/materialButton6"
+                app:layout_constraintBottom_toBottomOf="@+id/materialButton4"
                 app:layout_constraintVertical_bias="1.0" app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/materialButton5" app:layout_constraintTop_toTopOf="@+id/materialButton6"/>
+                android:id="@+id/materialButton3" app:layout_constraintTop_toTopOf="@+id/materialButton4"/>
+
+
 
         <TextView
                 android:id="@+id/textView11"
@@ -91,86 +95,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Applied for Senior Android Developer"
+                android:text="Business Intelligence Developer"
                 android:textColor="@color/textBlack"
                 android:textSize="@dimen/text_body_regular"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/circleImageView"
                 app:layout_constraintTop_toBottomOf="@+id/circleImageView"/>
 
-        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                  android:text="If you are willing, I would be so appreciative if you would answer some or all of the questions below to help me gain some insight into my strengths and the things I do best."
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="As Business Intelligence Developer you'll work with a high-performing team of BI Developers and Web Solutions Engineers who deliver innovative business intelligence solutions and reliable and accurate data marts that help drive business growth and make Google's global sales and operations more efficient. "
+                  app:layout_constraintTop_toBottomOf="@+id/textView11"
                   android:layout_marginTop="8dp"
-                  app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView11"
-                  android:id="@+id/textView14"/>
+                  app:layout_constraintStart_toStartOf="@+id/textView11" app:layout_constraintEnd_toEndOf="parent"
+                  android:id="@+id/textView13"/>
 
-        <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:text="Skills"
-                android:layout_marginTop="16dp"
-                android:textColor="@color/textBlack"
-                android:textSize="@dimen/text_body_regular"
-                app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/textView14"/>
-
-        <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup"
-                android:layout_width="0dp"
-                android:layout_marginTop="8dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView12"
-                app:layout_constraintStart_toStartOf="@+id/textView12">
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Android"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Java"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Java"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kotlin"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="UI"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="UX"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Android sdk"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Algorithms"/>
-
-            <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Data Structures"/>
-
-        </com.google.android.material.chip.ChipGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
