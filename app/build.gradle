@@ -32,6 +32,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     implementation 'com.android.support:design:28.0.0'
+    compile 'com.github.Yalantis:SearchFilter:v1.0.4'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'androidx.core:core-ktx:1.1.0-alpha04'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
